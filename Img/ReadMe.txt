@@ -1,0 +1,1 @@
+This folder contains the gifs of the pet's animation
