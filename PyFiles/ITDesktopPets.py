@@ -1,5 +1,5 @@
 from tkinter import tk
-import erR0r 
+import Pet
 #import Folder0
 #import SECUR
 
@@ -9,15 +9,19 @@ errorWindow = tk.Tk()
 folderWindow = tk.Tk()
 securWindow = tk.Tk()
 
-Error = erR0r(tk)
-#Folder = Folder0(tk)
-#Secur = SECUR(tk)
+Error = Pet(tk, 'erR0r\\Gifs\\', 8, 8, 8, 8, 8)
+#Folder = Pet(tk, 'Folder0\\Gifs\\', 8, 8, 8, 8, 8)
+#Secur = Pet(tk, 'SECUR\\Gifs\\', 8, 8, 8, 8, 8)
 
 
 def Update() :
     frameError = Error.GifWork()
     #frameFolder = Folder.GifWork()
     #frameSecur = Secur.GifWork()
+    
+    Error.Move()
+    #Folder.Move()
+    #Secur.Move()
     
     # window.geometry('gifSize+' + str(Position x) + '+Floor y')
     
