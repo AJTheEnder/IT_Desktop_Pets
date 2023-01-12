@@ -2,19 +2,29 @@ import pyautogui
 import random
 import tkinter as tk
 
-x = 1400 # Position x
+x = 1920 # Position x
+
+#  ------------------------------------------> x
+#  |
+#  |
+#  |
+#  |
+#  |
+#  |
+# \/
+#  y
 
 cycle = 0
 check = 1
 
-idle_num =[1, 2, 3, 4]
+idle_num = [1, 2, 3, 4]
 sleep_num = [10, 11, 12, 13, 15]
 walk_left = [6, 7]
 walk_right = [8, 9]
 
 event_number = random.randrange(1, 3, 1)
 
-impath = 'D:\\Cours\\3èmeAnnée\\Perso\\IT_Desktop_Pets\\Img\\'
+impath = 'D:\\Cours\\3emeAnnee\\Perso\\IT_Desktop_Pets\\Img\\'
 
 window = tk.Tk()
 
@@ -98,7 +108,7 @@ def update(cycle, check, event_number, x):
         cycle, event_number = gif_work(cycle, walk_negative, event_number, 1, 9)
         x -= -3
         
-    window.geometry('100x100+' + str(x) + '+1050')
+    window.geometry('100x100+' + str(x) + '+1960') # window.geometry('gifSize+' + str(Position x) + '+Floor y')
     label.configure(image = frame)
     window.after(1, event, cycle, check, event_number, x)
         
